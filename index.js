@@ -53,7 +53,11 @@ inquirer.prompt(
     name: 'email',
     message: 'What is your email address?',
   },
-])
+]).then((answers)=> {
+  console.log(answers)
+fs.writeFile(`README2.md`, `${answers.title}`, (error) => error ? console.error(error) : console.log(`Success`)
+);
+});
 
 
 
