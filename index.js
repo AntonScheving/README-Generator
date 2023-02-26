@@ -1,3 +1,5 @@
+console.log("\n\n This is a README.md file generator. \n Please type your answers to the questions below to generate your own README.md file.\n");
+
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");

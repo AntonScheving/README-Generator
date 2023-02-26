@@ -9,6 +9,9 @@ function generateMarkdown(answers) {
 - [License](#license)
 \n\n
 
+[![Licence](https://img.shields.io/badge/License-${answers.license}-yellow.svg)](https://opensource.org/licenses/${answers.license})
+\n\n
+
 // ## Description\n
 //  ${answers.description }
 // \n\n
@@ -48,10 +51,11 @@ ${answers.tests}
 \n\n
 
 ## GitHub\n
-${answers.github}
+https://github.com/${answers.github}
 \n\n
 
 ## Contact\n
+Feel free to reach out to me on my email:
 ${answers.email}
 \n\n
 
