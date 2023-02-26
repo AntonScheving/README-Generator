@@ -5,32 +5,6 @@ const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
-const generateHTML = (answers) => {
-  `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Hi! My name is ${answers.name}</h1>
-    <p class="lead">I am from ${answers.location}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-    <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${answers.github}</li>
-      <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
-    </ul>
-  </div>
-</div>
-</body>
-</html>`;
-};
-
-
 inquirer.prompt(
 // array of questions for user
 // const questions = 
@@ -39,6 +13,11 @@ inquirer.prompt(
     type: 'input',
     name: 'title',
     message: 'What is the title of your project?',
+  },
+  {
+    type: 'input',
+    name: 'repoTitle',
+    message: 'What is the exact title of your repository?',
   },
   {
     type: 'input',
@@ -72,15 +51,21 @@ inquirer.prompt(
   },
   {
     type: 'input',
+    name: 'librariesAndTools',
+    message: 'Please enter libraries and tools used for your project (write them in a list like this <li>First item</li> <li>Second item</li> <li>Third item</li>):',
+  },
+  {
+    type: 'input',
     name: 'usage',
     message: 'Please enter usage information for your project:',
   },
   {
     type: 'list',
     name: 'license',
-    message: 'Please choose a license for your project:',
-    choices: ['MIT', 'GPLv3', 'Apache', 'BSD', 'None'],
+    message: '\n Please choose a license for your project\n (Visit https://choosealicense.com/ if you are unsure, which license to choose):',
+    choices: ['MIT', 'GPL-3-0', 'apache-2-0', 'BSD-3-clause', 'ISC', '0bsd'],
   },
+  
   {
     type: 'input',
     name: 'contribution',
@@ -98,12 +83,21 @@ inquirer.prompt(
   },
   {
     type: 'input',
+    name: 'website',
+    message: 'What is your website URL?',
+  },
+  {
+    type: 'input',
+    name: 'webLinkPlaceholder',
+    message: 'What is the placeholder for the website URL?',
+  },
+  {
+    type: 'input',
     name: 'email',
     message: 'What is your email address?',
   },
 ]).then((answers)=> {
   console.log(answers)
-const HTMLTemplate = generateHTML(answers);
 
 // fs.writeFile(`index.html`, HTMLTemplate, (error) => error ? console.error(error) : console.log(`Success`)
 
@@ -114,8 +108,6 @@ const HTMLTemplate = generateHTML(answers);
       // error ? console.error(error) : console.log(`Success!`)
             fs.writeFile(`README.md`, generateMarkdown(answers), (error) =>
       error ? console.error(error) : console.log(`Success!`)
-
-
 );
 });
 
