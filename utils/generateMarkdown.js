@@ -37,7 +37,7 @@ ${answers.screenshotSubtitle}
 ${answers.installation}
 \n\n
 
-${answers.title} is built with the following tools and libraries: <html><ul>${answers.librariesAndTools}<ul><html>
+${answers.title} is built with the following tools and libraries: <ul>${answers.librariesAndTools}</ul>
 \n\n
 
 ## Usage\n 
