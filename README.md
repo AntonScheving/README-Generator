@@ -10,6 +10,11 @@
 
 
 
+[![Licence](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+
+
 // ## Description
 
 //  
@@ -18,8 +23,8 @@
 
 
 switch (answers.description) {
-  case undefined:''
-  case '':''
+  case undefined:
+  case '':
     break;
   default:
     ## Description
@@ -73,14 +78,15 @@ Deployed website:
 
 ## GitHub
 
-
+https://github.com/AntonScheving
 
 
 
 
 ## Contact
 
-
+Feel free to reach out to me on my email:
+anton@gmail.com
 
 
 
