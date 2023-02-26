@@ -1,49 +1,45 @@
-# 
+# Readme Generator
+
+[![Licence](https://img.shields.io/static/v1?label=Licence&message=MIT&color=blue&?style=plastic&logo=appveyor)](https://opensource.org/license/MIT)
+
+
+
+
 ## Table Of Content
 
+- [Description](#description)
+- [Deployed website link](#website)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Contributing](#contribution)
 - [Tests](#tests)
+- [GitHub](#github)
+- [Contact](#contact)
 - [License](#license)
 
 
 
 
-[![Licence](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Description
+
+![GitHub repo size](https://img.shields.io/github/repo-size/AntonScheving/README-Generator?style=plastic)
+
+![GitHub top language](https://img.shields.io/github/languages/top/AntonScheving/README-Generator?style=plastic)
+
+
+THis is the description
 
 
 
 
-// ## Description
-
-//  
-// 
-
-
-
-switch (answers.description) {
-  case undefined:
-  case '':
-    break;
-  default:
-    ## Description
-
- 
-    
-
-);
-  
-
-
-Deployed website: 
+Deployed website: www.antonscheving.com
 
 
 
 
 <p align="center">
-  <img alt="" [Screenshot] src=""><br>
-
+  <img alt="kjndkjsnsdkjn" [Screenshot] src="Screenshot-1.png"><br>
+Screenshot subtitle
 </p>
 
 
@@ -51,27 +47,33 @@ Deployed website:
 
 ## Installation
 
+this is how you install it
 
+
+
+
+Readme Generator is built with the following tools and libraries: <html><ul><li>First item</li> <li>Second item</li> <li>Third item</li><ul><html>
 
 
 
 
 ## Usage
  
+This is how you use it
 
 
 
 
 ## Contribution
  
-
+Please contribute this way
 
 
 
 
 ## Tests
  
-
+please test in this way
 
 
 
@@ -82,18 +84,21 @@ https://github.com/AntonScheving
 
 
 
+<p>Visit my website: <strong><a href="www.antonscheving.com">AntonScheving.com</a></strong>
+
+
+
 
 ## Contact
 
 Feel free to reach out to me on my email:
-anton@gmail.com
+anton@scheving.email
 
 
 
 
 ## License
 
-MIT
-
+[![Licence](https://img.shields.io/static/v1?label=Licence&message=MIT&color=blue)](https://opensource.org/license/MIT)
 
 
