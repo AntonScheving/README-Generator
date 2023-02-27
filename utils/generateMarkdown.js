@@ -2,7 +2,7 @@
 function generateMarkdown(answers) {
   return `# ${answers.title}
 
-[![Licence](https://img.shields.io/static/v1?label=Licence&message=${answers.license}&color=blue&?style=plastic&logo=appveyor)](https://opensource.org/license/${answers.license})
+[![License](https://img.shields.io/static/v1?label=Licence&message=${answers.license}&color=blue&?style=plastic&logo=appveyor)](https://opensource.org/license/${answers.license})
 \n\n
 
 ## Table Of Content\n
@@ -24,7 +24,7 @@ function generateMarkdown(answers) {
 ${answers.description}
 \n\n
 
-Deployed website: ${answers.website}
+<p>Deployed website: <strong><a href="${answers.deployedWebsite}"></strong>
 \n\n
 
 <p align="center">
@@ -65,7 +65,7 @@ ${answers.email}
 \n\n
 
 ## License\n
-[![Licence](https://img.shields.io/static/v1?label=Licence&message=${answers.license}&color=blue)](https://opensource.org/license/${answers.license})
+[![License](https://img.shields.io/static/v1?label=Licence&message=${answers.license}&color=blue)](https://opensource.org/license/${answers.license})
 \n
 `;
 }
