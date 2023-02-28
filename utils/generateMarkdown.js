@@ -4,8 +4,7 @@ function generateMarkdown(answers) {
 
   ${
     answers.repoTitle &&
-    `[![License](https://img.shields.io/static/v1?label=Licence&message=${answers.license}&color=blue&?style=plastic&logo=appveyor)](https://opensource.org/license/${answers.license})
-\n\n`
+    `[![License](https://img.shields.io/static/v1?label=License&message=${answers.license}&color=blue&?style=plastic&logo=appveyor)](https://opensource.org/license/${answers.license})\n\n`
   }
 
 ${answers.title && `## Table Of Content\n`}
@@ -16,7 +15,7 @@ ${answers.usage && `- [Usage](#usage)`}
 ${answers.contribution && `- [Contributing](#contribution)`}
 ${answers.tests && `- [Tests](#tests)`}
 ${answers.github && `- [GitHub](#github)`}
-${answers.contact && `- [Contact](#contact)`}
+${answers.email && `- [Contact](#contact)`}
 ${answers.repoTitle && `- [License](#license)`}
 \n\n
 
@@ -25,7 +24,7 @@ ${
   `![GitHub repo size](https://img.shields.io/github/repo-size/${answers.github}/${answers.repoTitle}?style=plastic)\n`
 }
   ${
-    answers.github &&
+    answers.repoTitle &&
     `![GitHub top language](https://img.shields.io/github/languages/top/${answers.github}/${answers.repoTitle}?style=plastic)\n\n`
   }
 
@@ -35,13 +34,13 @@ ${
   ${answers.description}
 \n\n`
 }
-
+\n
 ${
   answers.deployedWebsite &&
   `<p>Deployed website: <strong><a href="${answers.deployedWebsite}"></a></strong>
 \n\n`
 }
-
+\n
 ${
   answers.screenshot &&
   `<p align="center">
@@ -50,7 +49,7 @@ ${answers.screenshotSubtitle}
 </p>
 \n\n`
 }
-
+\n
 ${
   answers.installation &&
   `## Installation\n
@@ -63,41 +62,41 @@ ${
   `${answers.title} is built with the following tools and libraries: <ul>${answers.librariesAndTools}</ul>
 \n\n`
 }
-
+\n
 ${
   answers.usage &&
   `## Usage\n 
 ${answers.usage}
 \n\n`
 }
-
+\n
 ${
   answers.contribution &&
   `## Contribution\n 
 ${answers.contribution}
 \n\n`
 }
-
+\n
 ${
   answers.tests &&
   `## Tests\n 
 ${answers.tests}
 \n\n`
 }
-
+\n
 ${
   answers.github &&
   `## GitHub\n
-https://github.com/${answers.github}
+<a href="https://github.com/${answers.github}"><strong>${answers.github}</a></strong>
 \n`
 }
 
 ${
   answers.website &&
-  `<p>Visit my website: <strong><a href="${answers.website}">${answers.webLinkPlaceholder}</a></strong>
+  `<p>Visit my website: <strong><a href="${answers.website}">${answers.webLinkPlaceholder}</a></strong></p>
 \n\n`
 }
-
+\n
 ${
   answers.email &&
   `## Contact\n
@@ -105,7 +104,7 @@ Feel free to reach out to me on my email:
 ${answers.email}
 \n\n`
 }
-
+\n
 ${
   answers.repoTitle &&
   `## License\n
@@ -115,10 +114,3 @@ ${
 `;
 }
 module.exports = generateMarkdown;
-
-// TODO
-// work on the README content
-// do a git push
-// work on the video
-// test the README for user input and titles not including
-// undefined in README because license value is not displayed 

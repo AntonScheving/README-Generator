@@ -1,11 +1,6 @@
-// Can The empty user inputs remove the markdown titles automatically?
-// is the gitignore correct?
-// how to input preformatted text for markdown and the different lins
-
-console.log("\n\n This is a README.md file generator. \n Please type your answers to the questions below to generate your own README.md file.\n To type your answers press \n - 'Enter' \n - then press 'i' \npress Ctrl v (Windows) - command v (Mac OS) \n press 'escape' \n press colon (:) \n press wq and enter");
+console.log("\n\n This is a README.md file generator. Please read the included README file before using this application. \n\n Please type your answers to the questions below to generate your own README.md file.\n To type your answers press \n- 'Enter' \n- Then press 'i' \n- Press Ctrl v (Windows) - command v (Mac OS) to paste your text or start typing directly into the editor\n- Press 'escape' \n- Press colon ':' \n- Press 'wq' and 'Enter'\n\n");
 
 const fs = require("fs");
-// const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
@@ -24,7 +19,7 @@ inquirer.prompt(
     message: 'What is the exact title of your repository?\n',
   },
   {
-    type: 'input',
+    type: 'editor',
     name: 'description',
     message: '\nPlease enter a description of your project: \nExplain the what, why, and how of your project. \nUse the following questions as a guide: \n\t- What was your motivation? \n\t- Why did you build this project? \n\t- What problem does it solve? \n\t- What did you learn?\n'
   },
@@ -49,7 +44,7 @@ inquirer.prompt(
     message: 'Please enter screenshot subtitle:\n',
   },
   {
-    type: 'input',
+    type: 'editor',
     name: 'installation',
     message: 'Please enter installation instructions for your project:\n',
   },
@@ -59,7 +54,7 @@ inquirer.prompt(
     message: 'Please enter libraries and tools used for your project. Write them in a list like this: \n<li>First item</li> <li>Second item</li> <li>Third item</li>:\n',
   },
   {
-    type: 'input',
+    type: 'editor',
     name: 'usage',
     message: 'Please enter usage information for your project:\n',
   },
@@ -67,7 +62,7 @@ inquirer.prompt(
     type: 'list',
     name: 'license',
     message: '\n Please choose a license for your project\n (Visit https://choosealicense.com/ if you are unsure, which license to choose):',
-    choices: ['\tMIT', '\tGPL-3-0', '\tapache-2-0', '\tBSD-3-clause', '\tISC', '\t0bsd'],
+    choices: ['MIT', 'GPL-3-0', 'apache-2-0', 'BSD-3-clause', 'ISC', '0bsd'],
   },
   
   {
@@ -76,7 +71,7 @@ inquirer.prompt(
     message: '\nPlease enter contribution guidelines for your project:\n',
   },
   {
-    type: 'input',
+    type: 'editor',
     name: 'tests',
     message: 'Please enter test instructions for your project:\n',
   },
