@@ -1,4 +1,8 @@
-console.log("\n\n This is a README.md file generator. \n Please type your answers to the questions below to generate your own README.md file.\n");
+// Can The empty user inputs remove the markdown titles automatically?
+// is the gitignore correct?
+// how to input preformatted text for markdown and the different lins
+
+console.log("\n\n This is a README.md file generator. \n Please type your answers to the questions below to generate your own README.md file.\n To type your answers press \n - 'Enter' \n - then press 'i' \npress Ctrl v (Windows) - command v (Mac OS) \n press 'escape' \n press colon (:) \n press wq and enter");
 
 const fs = require("fs");
 // const path = require('path');
@@ -67,7 +71,7 @@ inquirer.prompt(
   },
   
   {
-    type: 'input',
+    type: 'editor',
     name: 'contribution',
     message: '\nPlease enter contribution guidelines for your project:\n',
   },
