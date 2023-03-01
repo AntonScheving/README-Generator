@@ -111,7 +111,7 @@ Here are step-by-step instructions for using the README Generator:
 - Press colon ‘:wq’ and enter to save and exit the editor to get to the next question
 1. The generator will store your responses in an object.
 2. Once you've answered all the questions, the generator will use that object to dynamically generate the README.md file.
-3. The generated README.md file will be located in the same directory as the generator files. Each generated file will overide the previous file generated.
+3. The generated README.md file will be located in the same directory as the generator files. Each generated file will override the previous file generated.
 4. Copy your generated [README.md](http://README.md) file and paste it into your own project folder.
 
 
