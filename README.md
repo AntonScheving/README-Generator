@@ -80,17 +80,17 @@ npm install --save inquirer fs
 node index.js
 ```
 
-1. Answer the prompts in the terminal: The generator will prompt you with a series of questions about your project. Answer each question as accurately as possible. See the Usage section to learn how to answer longform questions.
-2. Generate README.md file: Once you have answered all the questions, the generator will generate the **`README.md`** file based on your answers. The generated file will be saved in the project directory.
-3. Review and edit the generated **`README.md`** file: Review the generated **`README.md`** file and make any necessary edits or additions to ensure that it accurately represents your project and provides all the necessary information.
+1. Answer the prompts in the terminal: The generator will prompt you with a series of questions about your project. Answer each question as accurately as possible. See the Usage section to learn how to answer long-form questions.
+2. Generate README.md file: Once you have answered all the questions, the generator will generate the README.md file based on your answers. The generated file will be saved in the project directory.
+3. Review and edit the generated README.md file: Review the generated README.md file and make any necessary edits or additions to ensure that it accurately represents your project and provides all the necessary information.
 
-That's it! With these steps, you can generate a professional-looking **`README.md`** file for your project with minimal effort.
-
-
+That's it! With these steps, you can generate a professional-looking README.md file for your project with minimal effort.
 
 
 
-README Generator is built with the following tools and libraries: <ul><li>First item</li> <li>Second item</li> <li>Third item</li></ul>
+
+
+README Generator is built with the following tools and libraries: <ul><li>JavaScript</li> <li>Node.js</li> <li>npm packages - inquirer & fs</li> <li>Markdown</li></ul>
 
 
 
@@ -112,7 +112,7 @@ Here are step-by-step instructions for using the README Generator:
 1. The generator will store your responses in an object.
 2. Once you've answered all the questions, the generator will use that object to dynamically generate the README.md file.
 3. The generated README.md file will be located in the same directory as the generator files. Each generated file will override the previous file generated.
-4. Copy your generated [README.md](http://README.md) file and paste it into your own project folder.
+4. Copy your generated README.md file and paste it into your own project folder.
 
 
 

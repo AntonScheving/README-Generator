@@ -1,4 +1,10 @@
-// function to generate markdown for README
+// The generateMarkdown() function is defined at the bottom of the code and takes the user's answers as an argument. It uses template literals to generate the contents of the README.md file based on the user's answers. The function returns the generated content as a string, which is passed to the writeFile() method to be written to disk.
+
+// The ${} is a syntax called "template literals" in JavaScript. It allows you to embed expressions inside string literals.
+
+// The code is checking if the answers.title variable is truthy (i.e., not undefined, null, 0, false, or an empty string). If it is truthy, then it will return # ${answers.title}. If it is falsy, it will return false (because an empty string is falsy, and that would be the result of string concatenation with a falsy value).
+
+// So the code is essentially checking if answers.title exists (user input) and is truthy. If it is, then it is creating a string that starts with a "#" symbol followed by the value of answers.title. If answers.title is not truthy, then it is returning false and the string mentioned will not be created. If a user leaves a question empty it will not be included in the generated README file/
 function generateMarkdown(answers) {
   return `${answers.title && `# ${answers.title}`}
 
