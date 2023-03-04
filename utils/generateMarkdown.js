@@ -43,7 +43,7 @@ ${
 \n
 ${
   answers.deployedWebsite &&
-  `<p>Deployed website: <strong><a href="${answers.deployedWebsite}"></a></strong>
+  `<p>Deployed website: <strong><a href="${answers.deployedWebsite}">${answers.deployedWebsite}</a></strong>
 \n\n`
 }
 \n
